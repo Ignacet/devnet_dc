@@ -19,3 +19,8 @@ def my_abs_substract(x1, x2):
   return abs(x1)-abs(x2)
 
 print(my_abs_substract(-7, -3))
+
+def km_to_miles(x):
+  return x / 1.6
+i = input("Ingrese los km:")
+print(km_to_miles(i))
