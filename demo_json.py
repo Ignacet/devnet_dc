@@ -20,3 +20,14 @@ print (body)
 print (type(body))
 
 
+data = '{ "Nombre":"Ignacio" , "Apellido":"Cetkovich", "Datos" : {"Edad": 38} }'
+
+with open('data.txt', 'w') as outfile:
+    json.dump(data, outfile)
+
+with open('data.txt') as json_file:
+    data = json.load(json_file)
+    print (data)
+
+
+
